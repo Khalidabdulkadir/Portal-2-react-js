@@ -1,0 +1,48 @@
+<div className="gpt3__navbar-menu">
+        {toggleMenu
+          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+        {toggleMenu && (
+        <div className="gpt3__navbar-menu_container scale-up-center">
+          <div className="gpt3__navbar-menu_container-links">
+            <p><a href="#home">Home</a></p>
+            <p><a href="#wgpt3">What is GPT3?</a></p>
+            <p><a href="#possibility">Open AI</a></p>
+            <p><a href="#features">Case Studies</a></p>
+            <p><a href="#blog">Library</a></p>
+          </div>
+          <div className="gpt3__navbar-menu_container-links-sign">
+            <p>Sign in</p>
+            <button type="button">Sign up</button>
+          </div>
+        </div>
+        <li><NavLink to='/sign in'>Sign In</NavLink></li>
+        import { BrowserRouter,Route,Routes } from 'react-router-dom';
+
+        )}
+
+        <BrowserRouter>
+          <Navbar/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/services' element={<Services/>}/>
+            <Route path='/contacts' element={<Contacts/>}/>
+            <Route path='/gallery' element={<Gallery/>}/>
+            <Route path='/profile' element={<Profile/>}/>
+            <Route path='/customers' element={<Customers/>}/>
+            <Route path='/addcustomers' element={<Addcustomer/>}/>
+            <Route path='/products' element={<Products/>}/>
+            <Route path='/users' element={<Users/>}/>
+            <Route path='/hooks' element={ <Hooks/>}/>
+            
+         
+    
+          </Routes>
+          <State/>
+    
+          <Home/>
+          </BrowserRouter>
+      </div>
+
+      
